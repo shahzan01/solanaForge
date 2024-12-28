@@ -7,11 +7,11 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Button } from "./ui/button";
-import { getAirdrop } from "@/utils/getAirdrop";
+import { getAirdrop } from "../utils/getAirdrop";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { walletBalanceAtom } from "@/atoms";
+import { walletBalanceAtom } from "../atoms";
 import { useRecoilState } from "recoil";
-import { Header } from "./Header";
+
 import { useToast } from "../hooks/use-toast";
 
 export default function Account() {

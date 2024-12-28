@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { Coins } from "lucide-react";
+import { Button } from "../components/ui/button";
+
 import { motion } from "framer-motion";
 import { ModeToggle } from "./ModeToggle";
 import { Link } from "react-router-dom";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { useSolanaChain } from "@/hooks/useSolanaChain";
-import { useDarkMode } from "@/hooks/useDarkMode";
+import { useSolanaChain } from "../hooks/useSolanaChain";
+import { useDarkMode } from "../hooks/useDarkMode";
 
 export function Header() {
   const { isDevnet, toggleChain } = useSolanaChain();

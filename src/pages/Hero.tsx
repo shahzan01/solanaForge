@@ -7,7 +7,7 @@ import * as THREE from "three";
 import Link from "next/link";
 import GLOBE from "vanta/src/vanta.globe";
 
-import CustomWalletButton from "../components/customWalletButton";
+import CustomWalletButton from "../components/CustomWalletButton";
 
 const Hero = () => {
   const [vantaEffect, setVantaEffect] = useState(0);

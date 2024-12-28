@@ -5,14 +5,14 @@ import App from "./App.tsx";
 import SolanaChainProvider from "./provider/SolanaChainProvider.tsx";
 import WalletContextProvider from "./provider/ConnectionProvider.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header } from "./components/Header.tsx";
+
 import { RecoilRoot } from "recoil";
 import TransferSOL from "./components/TransferSOL.tsx";
 import Account from "./components/Account.tsx";
 import TokenRoute from "./components/TokenRoute.tsx";
 import { Toaster } from "./components/ui/toaster";
 import DarkModeProvider from "./provider/DarkModeProvider.tsx";
-import Hero from "./pages/hero.tsx";
+import Hero from "./pages/Hero.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

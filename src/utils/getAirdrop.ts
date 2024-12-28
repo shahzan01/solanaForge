@@ -1,8 +1,5 @@
 import { Connection, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
 import { SetterOrUpdater } from "recoil";
-import { useToast } from "../hooks/use-toast";
-import { constants } from "buffer";
-import { VideoOff } from "lucide-react";
 
 export const getAirdrop = async (
   publicKey: PublicKey | null,
@@ -24,7 +21,7 @@ export const getAirdrop = async (
       5 * LAMPORTS_PER_SOL
     );
     const status = (await connection.getSignatureStatus(airDropResult)).value;
-
+    console.log(status);
     const totalBalance = (await connection.getBalance(publicKey)) / 1000000000;
     setWalletBalance(totalBalance);
     toast({

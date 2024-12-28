@@ -1,4 +1,9 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "../components/ui/tabs";
 import { TokenBalance } from "./TokenBalance";
 import { TransferForm } from "./TransferToken";
 import { CreateTokenForm } from "./CreateTokenForm";

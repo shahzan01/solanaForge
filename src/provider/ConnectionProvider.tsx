@@ -5,8 +5,8 @@ import {
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { ReactElement } from "react";
-import * as web3 from "@solana/web3.js";
-import { useSolanaChain } from "@/hooks/useSolanaChain";
+
+import { useSolanaChain } from "../hooks/useSolanaChain";
 
 const WalletContextProvider = ({ children }: { children: ReactElement }) => {
   const { isDevnet } = useSolanaChain();

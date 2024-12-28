@@ -1,19 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { tokenCreationAtom } from "@/atoms";
-import { Button } from "@/components/ui/button";
+import { tokenCreationAtom } from "../atoms";
+import { Button } from "../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 import { useRecoilState } from "recoil";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { Keypair, SystemProgram, Transaction } from "@solana/web3.js";
-import PinataService from "@/utils/uploadMetadata";
+import PinataService from "../utils/uploadMetadata";
 import {
   createAssociatedTokenAccountInstruction,
   createInitializeMetadataPointerInstruction,
@@ -27,7 +27,7 @@ import {
   TYPE_SIZE,
 } from "@solana/spl-token";
 import { createInitializeInstruction, pack } from "@solana/spl-token-metadata";
-import { useToast } from "@/hooks/use-toast";
+import { useToast } from "../hooks/use-toast";
 
 export function CreateTokenForm() {
   const [tokenData, setTokenData] = useRecoilState(tokenCreationAtom);

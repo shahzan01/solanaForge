@@ -11,7 +11,7 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
-import { useToast } from "@/hooks/use-toast";
+import { useToast } from "../hooks/use-toast";
 import { Header } from "./Header";
 
 export default function TransferSOL() {
