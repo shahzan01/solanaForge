@@ -22,9 +22,9 @@ export function Header() {
         <div className="flex items-center gap-8">
           <a href="/home" className="flex items-center space-x-2">
             {isDarkMode ? (
-              <img src="src\assets\solana-lighty.png" alt="logo" />
+              <img src="/assets/solana-lighty.png" alt="logo" />
             ) : (
-              <img src="src\assets\solana-dark.png" alt="logo" />
+              <img src="/assets/solana-dark.png" alt="logo" />
             )}
             <span className="font-bold text-xl text-gray-900 dark:text-white">
               SolanaForge
