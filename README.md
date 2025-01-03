@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Solana Forge: A Decentralized Token Launchpad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Solana Forge** is a decentralized application (dApp) built on the Solana blockchain, enabling users to seamlessly launch tokens, manage SOL transactions, and oversee token minting and distribution. It combines blockchain technology with a user-friendly interface for a smooth experience.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Token Launchpad**: Easily create and launch new tokens.
+- **Blockchain Interaction**: Integrated with web3.js and Solana Wallet Adapter.
+- **Metadata Storage**: Uses Pinata for decentralized metadata handling.
+- **Responsive Design**: Built with Tailwind CSS for an adaptive user experience across devices.
+- **Dynamic Animations**: Includes a Vanta.js globe animation for an engaging homepage.
+- **Efficient API Integration**: Axios is used for fast and reliable API calls.
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**: React.js, Vite, TypeScript, Tailwind CSS
+- **State Management**: Recoil
+- **Blockchain**: Solana, web3.js, Pinata
+- **Animations**: Framer Motion, Vanta.js
+- **Hosting**: Deployed on Vercel
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Screenshots
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+(Include screenshots or a GIF of the application in action.)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shahzan01/solanaForge.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd solanaForge
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Usage
+
+1. Connect your Solana wallet using the wallet adapter.
+2. Access the token launchpad to create and manage tokens.
+3. Monitor transactions and manage token supply through the intuitive dashboard.
+
+## Live Demo
+
+Check out the live version of **Solana Forge** [here](https://solana-forge.vercel.app/).
+
+## Contributions
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue for suggestions.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
